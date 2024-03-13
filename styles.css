@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    text-align: center;
+}
+.hide{
+    display: none;
+}
+.flex{
+    display: flex;
+}
+.graphics-container{
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.image{
+    max-height: 350px;
+}
+.scoreboard-container{
+    flex-basis: 200px;
+    justify-content: space-between;
+}
+.score{
+    font-size: 64px;
+}

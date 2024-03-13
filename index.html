@@ -10,23 +10,36 @@
 <body>
     <h1>Rock Paper Scissors</h1>
     <h1 class="pop-up hide">DRAW! Play again!</h1>
-    <section id="graphics-container flex">
-        <img src="./src/pngimg.com - question_mark_PNG126.png" alt="">
+    <section class="graphics-container flex">
+        <img src="./src/pngimg.com - question_mark_PNG126.png" alt="img placeholder" class="image">
         <div class="scoreboard-container flex">
+            <div class="player-container">
             <h3>Player</h3>
-            <p class="player-score">0</p>
+            <p class="player-score score">0</p>
+            </div>
+            <div class="computer-container">
             <h3>Computer</h3>
-            <p class="computer-score">0</p>
+            <p class="computer-score score">0</p>
+            </div>
         </div>
-        <img src="./src/pngimg.com - question_mark_PNG126.png" alt="">
+        <img src="./src/pngimg.com - question_mark_PNG126.png" alt="img placeholder" class="image">
     </section>
-    <section id="form-container">
+    <section class="form-container">
         <h3>Choose one and click "PLAY" to play.</h3>
-        <form action="">
+        <form action="" class="flex">
+            <div class="input-container">
+            <label for="rock">Rock</label>
             <input type="radio" name="rock" id="rock" value="Rock">
+            </div>
+            <div class="input-container">
+            <label for="paper">Paper</label>
             <input type="radio" name="paper" id="paper" value="Paper">
+            </div>
+            <div class="input-container">
+            <label for="scissors">Scissors</label>
             <input type="radio" name="scissors" id="scissors" value="Scissors">
-            <input type="submit" value="PLAY">
+            </div>
+            <input type="submit" value="PLAY" class="submit">
         </form>
     </section>
     <script src="./index.js"></script>
