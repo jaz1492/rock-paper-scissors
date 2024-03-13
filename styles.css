@@ -45,3 +45,10 @@ body{
     border-radius: 10px;
     margin:0 auto;
 }
+.pop-up{
+    font-size: 84px;
+    top: 50%;
+    right: 50%;
+    position: absolute;
+    color: red;
+}
