@@ -8,10 +8,14 @@ Give results
 update scoreboard
 */
 const form = document.querySelector("form"); 
+const playerImg = document.querySelector(".left");
+const compImg = document.querySelector(".right");
 const selection = ["rock","paper","scissors"];
 // determines if the player is the winner using numbers from html file as well as a random num for computer.
 // It returns a string as the result and updates the score.
 const isPlayerWinner = function(player,computer){
+    playerImg.src = `./src/${selection[player]}.png`;
+    compImg.src = `./src/${selection[computer]}.png`;
     switch(player){
         case 0:
             if(computer == 0){return announceResults("Draw")}
@@ -46,7 +50,11 @@ const announceResults = function(result){
     const popup = document.querySelector(".pop-up");
     popup.classList.remove('hide');
     popup.innerHTML = result;
-    setTimeout(()=>popup.classList.add('hide'),1000) 
+    setTimeout(function(){
+        popup.classList.add('hide')
+        playerImg.src = './src/placeholder.png';
+        compImg.src = './src/placeholder.png';
+    },1000) 
 }
 //function to update the score of the winner. 
 const updateScore = function(winner){

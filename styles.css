@@ -47,8 +47,8 @@ body{
 }
 .pop-up{
     font-size: 84px;
-    top: 50%;
-    right: 50%;
+    height: 100%;
+    width: 100%;
     position: absolute;
     color: red;
 }
