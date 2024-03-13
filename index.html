@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper Scissors game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <h1 class="pop-up hide">DRAW! Play again!</h1>
+    <section id="graphics-container flex">
+        <img src="./src/pngimg.com - question_mark_PNG126.png" alt="">
+        <div class="scoreboard-container flex">
+            <h3>Player</h3>
+            <p class="player-score">0</p>
+            <h3>Computer</h3>
+            <p class="computer-score">0</p>
+        </div>
+        <img src="./src/pngimg.com - question_mark_PNG126.png" alt="">
+    </section>
+    <section id="form-container">
+        <h3>Choose one and click "PLAY" to play.</h3>
+        <form action="">
+            <input type="radio" name="rock" id="rock" value="Rock">
+            <input type="radio" name="paper" id="paper" value="Paper">
+            <input type="radio" name="scissors" id="scissors" value="Scissors">
+            <input type="submit" value="PLAY">
+        </form>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>
