@@ -24,24 +24,23 @@
         </div>
         <img src="./src/pngimg.com - question_mark_PNG126.png" alt="img placeholder" class="image">
     </section>
-    <section class="form-container">
         <h3>Choose one and click "PLAY" to play.</h3>
-        <form action="" class="flex">
+        <form action="" method="GET" class="flex form-container">
             <div class="input-container">
-            <label for="rock">Rock</label>
-            <input type="radio" name="rock" id="rock" value="Rock">
+                <label for="rock"><img src="./src/53a0234955caf282d12d7de3ca8fd084-rubble-rock-illustration.png" alt="rock" class="form-img">Rock</label>
+                <input type="radio" name="player-choice" id="rock" value="rock" required checked>
             </div>
             <div class="input-container">
-            <label for="paper">Paper</label>
-            <input type="radio" name="paper" id="paper" value="Paper">
+                <label for="paper"><img src="./src/lovepik-paper-png-image_401706037_wh1200.png" alt="paper" class="form-img">Paper</label>
+                <input type="radio" name="player-choice" id="paper" value="paper" required>
             </div>
             <div class="input-container">
-            <label for="scissors">Scissors</label>
-            <input type="radio" name="scissors" id="scissors" value="Scissors">
+                
+                <label for="scissors"><img src="./src/56b484f1fca293952135feb60d61e8a6-barbershop-scissors-illustration.png" alt="scissors" class="form-img">Scissors</label>
+                <input type="radio" name="player-choice" id="scissors" value="scissors" required>
             </div>
             <input type="submit" value="PLAY" class="submit">
         </form>
-    </section>
-    <script src="./index.js"></script>
+    <script src="./index.js" async defer></script>
 </body>
 </html>
