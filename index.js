@@ -28,6 +28,11 @@ const isPlayerWinner = function(player,computer){
         break;
     }
 }
+//function to update the score of the winner. 
+const updateScore = function(winner){
+    const score = document.querySelector(`.${winner}-score`);
+    return score.innerHTML=parseInt(score.innerHTML)+1;
+}
 form.addEventListener("submit", (event)=>{
     const playersChoice = parseInt(event.srcElement.elements["player-choice"].value); // grabs clients choice.
     const computerChoice = Math.floor(Math.random()*3); // function to generate comp choice.
