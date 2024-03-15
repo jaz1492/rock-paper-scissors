@@ -6,8 +6,7 @@ Compare results
 Give results
     If results are same, alert and go back to input
 update scoreboard
-*/
-const form = document.querySelector("form"); 
+*/ 
 const playerImg = document.querySelector(".left");
 const compImg = document.querySelector(".right");
 const selection = ["rock","paper","scissors"];
@@ -61,9 +60,7 @@ const updateScore = function(winner){
     const score = document.querySelector(`.${winner}-score`);
     return score.innerHTML=parseInt(score.innerHTML)+1;
 }
-form.addEventListener("submit", (event)=>{
-    const playersChoice = parseInt(event.srcElement.elements["player-choice"].value); // grabs clients choice.
+const runGame = function (num){
     const computerChoice = Math.floor(Math.random()*3); // function to generate comp choice.
-    isPlayerWinner(playersChoice,computerChoice);
-    event.preventDefault();//this stops the form from refreshing the page. I plan to change this once forms are covered. 
-})
+    isPlayerWinner(num,computerChoice);
+}

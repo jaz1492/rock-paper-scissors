@@ -24,23 +24,20 @@
         </div>
         <img src="./src/placeholder.png" alt="img placeholder" class="image right">
     </section>
-        <h3>Choose one and click "PLAY" to play.</h3>
-        <form action="" method="GET" class="flex form-container">
+        <h3>Choose one and click to play.</h3>
+        <section class="flex form-container">
             <div class="input-container">
-                <label for="rock"><img src="./src/rock.png" alt="rock" class="form-img">Rock</label>
-                <input type="radio" name="player-choice" id="rock" value="0" required checked>
+               <button onclick="runGame(0)"><img src="./src/rock.png" alt="rock" class="form-img"></button>
+               
             </div>
             <div class="input-container">
-                <label for="paper"><img src="./src/paper.png" alt="paper" class="form-img">Paper</label>
-                <input type="radio" name="player-choice" id="paper" value="1" required>
+                <button onclick="runGame(1)"><img src="./src/paper.png" alt="paper" class="form-img"></button>  
             </div>
             <div class="input-container">
                 
-                <label for="scissors"><img src="./src/scissors.png" alt="scissors" class="form-img">Scissors</label>
-                <input type="radio" name="player-choice" id="scissors" value="2" required>
+                <button onclick="runGame(2)"><img src="./src/scissors.png" alt="scissors" class="form-img"></button>    
             </div>
-            <input type="submit" value="PLAY" class="submit">
-        </form>
+        </section>
     <script src="./index.js" async defer></script>
 </body>
 </html>
